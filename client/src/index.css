@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand Colors from requirements */
+  --green-growth: 122 39% 49%;
+  /* #4CAF50 */
+  --blue-tech: 207 90% 54%;
+  /* #2196F3 */
+  --orange-action: 16 100% 60%;
+  /* #FF6B35 */
+  --yellow-highlight: 45 100% 51%;
+  /* #FFC107 */
+
+  /* Base System Colors */
+  --background: 0 0% 100%;
+  --foreground: 222 47% 11%;
+
+  --primary: 207 90% 54%;
+  /* Using Blue as primary */
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 122 39% 49%;
+  /* Using Green as secondary */
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 210 40% 96%;
+  --muted-foreground: 215 16% 47%;
+
+  --accent: 16 100% 60%;
+  /* Orange accents */
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 207 90% 54%;
+
+  --radius: 0.75rem;
+
+  /* Fonts */
+  --font-display: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/20;
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[hsl(var(--blue-tech))] via-[hsl(var(--green-growth))] to-[hsl(var(--orange-action))];
+  }
+
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+
+  .organic-shape {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
