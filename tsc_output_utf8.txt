@@ -1,0 +1,8 @@
+﻿
+> rest-express@1.0.0 check
+> tsc
+
+client/src/components/ChatInterface.tsx(1,25): error TS2307: Cannot find module '@ai-sdk/react' or its corresponding type declarations.
+client/src/components/ChatInterface.tsx(13,19): error TS7006: Parameter 'error' implicitly has an 'any' type.
+client/src/components/ChatInterface.tsx(64,40): error TS7006: Parameter 'm' implicitly has an 'any' type.
+server/routes.ts(101,14): error TS2551: Property 'pipeDataStreamToResponse' does not exist on type 'StreamTextResult<ToolSet, Output<string, string, never>>'. Did you mean 'pipeTextStreamToResponse'?

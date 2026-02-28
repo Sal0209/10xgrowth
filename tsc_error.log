@@ -1,0 +1,2 @@
+﻿client/src/components/ChatInterface.tsx(14,9): error TS2353: Object literal may only specify known properties, and 'api' does not exist in type 'UseChatOptions<UIMessage<unknown, UIDataTypes, UITools>>'.
+client/src/components/ChatInterface.tsx(30,23): error TS2353: Object literal may only specify known properties, and 'content' does not exist in type '(Omit<UIMessage<unknown, UIDataTypes, UITools>, "id" | "role"> & { id?: string | undefined; role?: "system" | "user" | "assistant" | undefined; } & { ...; }) | { ...; } | { ...; }'.

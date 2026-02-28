@@ -1,0 +1,98 @@
+{
+  "content_embeddings": [
+    {
+      "table_name": "content_embeddings",
+      "column_name": "id",
+      "data_type": "integer",
+      "column_default": "nextval('content_embeddings_id_seq'::regclass)"
+    },
+    {
+      "table_name": "content_embeddings",
+      "column_name": "url",
+      "data_type": "text",
+      "column_default": null
+    },
+    {
+      "table_name": "content_embeddings",
+      "column_name": "title",
+      "data_type": "text",
+      "column_default": null
+    },
+    {
+      "table_name": "content_embeddings",
+      "column_name": "content",
+      "data_type": "text",
+      "column_default": null
+    },
+    {
+      "table_name": "content_embeddings",
+      "column_name": "embedding",
+      "data_type": "text",
+      "column_default": null
+    },
+    {
+      "table_name": "content_embeddings",
+      "column_name": "created_at",
+      "data_type": "timestamp without time zone",
+      "column_default": "now()"
+    }
+  ],
+  "inquiries": [
+    {
+      "table_name": "inquiries",
+      "column_name": "id",
+      "data_type": "bigint",
+      "column_default": null
+    },
+    {
+      "table_name": "inquiries",
+      "column_name": "name",
+      "data_type": "text",
+      "column_default": null
+    },
+    {
+      "table_name": "inquiries",
+      "column_name": "email",
+      "data_type": "text",
+      "column_default": null
+    },
+    {
+      "table_name": "inquiries",
+      "column_name": "phone",
+      "data_type": "text",
+      "column_default": null
+    },
+    {
+      "table_name": "inquiries",
+      "column_name": "message",
+      "data_type": "text",
+      "column_default": null
+    },
+    {
+      "table_name": "inquiries",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "column_default": "now()"
+    }
+  ],
+  "subscribers": [
+    {
+      "table_name": "subscribers",
+      "column_name": "id",
+      "data_type": "bigint",
+      "column_default": null
+    },
+    {
+      "table_name": "subscribers",
+      "column_name": "email",
+      "data_type": "text",
+      "column_default": null
+    },
+    {
+      "table_name": "subscribers",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "column_default": "now()"
+    }
+  ]
+}
