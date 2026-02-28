@@ -346,24 +346,8 @@ create index on documents
 python scripts/build_knowledge.py
 ```
 
----
-
-## Checklist
-
-| # | Task | Done |
-|---|------|------|
-| 1 | Scrape site pages into `/docs` | ☐ |
-| 2 | Write `docs/api_overview.md` | ☐ |
-| 3 | Export Supabase schema to `docs/schema.md` | ☐ |
-| 4 | Run `build_knowledge.py` to create vector DB | ☐ |
-| 5 | Create `supabase/functions/chat/index.ts` | ☐ |
-| 6 | Set secret: `supabase secrets set OPENAI_API_KEY=...` | ☐ |
-| 7 | Deploy: `supabase functions deploy chat` | ☐ |
-| 8 | Add `ChatWidget.tsx` to your React app | ☐ |
-| 9 | Test with 5 questions — verify answers are accurate | ☐ |
-| 10 | Set spending alert on OpenAI dashboard | ☐ |
-| 11 | (Optional) Migrate vector DB to Supabase pgvector | ☐ |
 
 ---
 
 *Stack: React · Vite · TypeScript · Supabase Edge Functions · OpenAI*
+
